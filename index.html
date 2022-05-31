@@ -40,7 +40,7 @@
                     data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="" role="button"><i class="fa fa-bars" aria-hidden="true"
-                            style="color:#5c43ff"></i></span>
+                            style="color:#1376ff"></i></span>
                 </button>
                 <div class="collapse navbar-collapse ps-4" id="navbarTogglerDemo01">
                     <ul class="navbar-nav ms-auto me-5">
@@ -66,13 +66,14 @@
         <!-- navbar -->
 
         <div class="row" id="profile">
-            <div class="col-lg-6 mt-5 mb-5 ms-xs-4" id="imgdiv">
+            <i class="fa-light fa-face-glasses"></i>
+            <div class="col-lg-6 mt-2 mb-5" id="imgdiv">
                 <img src="images/Rohit.png" alt="Rohit image" id="rohitimg" class="ms-xs-5">
             </div>
             <div class="col-lg-6 my-auto">
                 <!-- <h3 id="name">ROHIT RANJAN</h3> -->
                 <h1 id="intro">I'm creative <br><span class="auto-input"></span></h1>
-                <p>I am Self-motivated, highly passionate
+                <p id="intropara">I am Self-motivated, highly passionate
                     and hardworking fresher looking for an
                     opportunity to work as a beginner to
                     utilize my skills and knowledge gained at
@@ -80,7 +81,8 @@
                     years to work for the growth of the
                     organization.</p>
                 <div>
-                    <button class="button" role="button"><span class="text">DOWNLOAD CV</span></button>
+                    <button class="button" role="button" type="submit" onclick="window.open('resume.pdf')"><span
+                            class="text">DOWNLOAD CV</span></button>
                 </div>
                 <!-- images -->
 
@@ -118,7 +120,7 @@
             </div>
         </div>
         <br id="projectscroll">
-        <br><br>
+        <br>
     </section>
     <section>
         <div id="project">
@@ -127,7 +129,7 @@
                 <hr id="line2">
             </div>
             <div id="carouselExampleControls" class="carousel slide col-lg-6 ms-lg-auto me-lg-auto"
-                data-bs-ride="carousel">
+                data-bs-ride="carousel" data-interval="3000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="images/home.jpg" class="d-block w-100" alt="Elearning home">
@@ -161,22 +163,68 @@
             </div>
         </div>
     </section>
-    <br id="contactscroll">
-    <section>
-        <div class="row contact w-75 ms-auto me-auto mt-5 mb-5">
-            <h1 id="contactheading" class="text-center mt-5 mb-5">Contacts</h1>
-            <div class="col-lg-3 text-center mb-5">
-                <a href="https://www.instagram.com/_rohitranjan_/" target="blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="" id="instagram"></a>
+    <section class="contactsec" id="contactscroll"> 
+        <div class="row contact ms-auto me-auto mt-5 mb-5">
+            <div class="col-lg-8 mb-lg-3">
+                <h1 id="contactheading" class="text-center mt-4 mb-4">Get in touch</h1>
+                <div class="container">
+                    <form class="" action="mailto:rohit192ranjan@gmail.com" method="post" enctype="text/plain">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="Name">Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="Name" placeholder="Your name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="Email">Email</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="email" name="Email" placeholder="Your Email..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="subject">Message</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="subject" name="Message" placeholder="Write something.." rows="3"
+                                    cols="23"></textarea>
+                            </div>
+                        </div>
+                        <div class="row w-50 mt-3 ms-auto me-auto">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="col-lg-3 text-center mb-5">
-                <a href="https://www.facebook.com/profile.php?id=100008703498528" target="blank"><i class="fa-brands fa-facebook fa-2x" id="facebook"></i></a>
+            <div class="col-lg-4">
+                <div class="row me-2">
+                    <h1 id="contactheading" class="text-center mt-4 mb-4">Contacts</h1>
+                    <div class="container2">
+                        <div class="icons ps-2 pe-2 text-center mt-lg-5 mb-lg-5" id="insta">
+                            <a href="https://www.instagram.com/_rohitranjan_/" target="blank"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt=""
+                                    id="instagram"></a>
+                        </div>
+                        <div class="icons ps-4 pe-4 text-center mt-lg-5 mb-lg-5">
+                            <a href="https://www.facebook.com/profile.php?id=100008703498528" target="blank"><i
+                                    class="fa-brands fa-facebook fa-2x" id="facebook"></i></a>
+                        </div>
+                        <div class="icons ps-4 pe-4 text-center mt-lg-5 mb-lg-5">
+                            <a href="https://www.linkedin.com/in/rohit-ranjan-1b9a9a210" target="blank"><i
+                                    class="fa-brands fa-linkedin fa-2x" id="linkedin"></i></a>
+                        </div>
+                        <div class="icons ps-4 pe-4 text-center mt-lg-5 mb-lg-5">
+                            <a href="https://www.whatsapp.com/" target="blank"><i class="fa-brands fa-whatsapp fa-2x"
+                                    id="whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3 text-center mb-5">
-                <a href="https://www.linkedin.com/in/rohit-ranjan-1b9a9a210" target="blank"><i class="fa-brands fa-linkedin fa-2x" id="linkedin"></i></a>
-            </div>
-            <div class="col-lg-3 text-center mb-5">
-                <a href="https://www.whatsapp.com/" target="blank"><i class="fa-brands fa-whatsapp fa-2x" id="whatsapp"></i></a>
-            </div>
+
         </div>
     </section>
 
@@ -188,15 +236,10 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed(".auto-input", {
-            strings: [" Graphic Designer", "Web Developer", "Competative programmer"],
+            strings: ["Web Developer", "Competative programmer", " Graphic Designer"],
             typeSpeed: 100,
             backSpeed: 100,
             loop: true
-        })
-        const myCarouselElement = document.querySelector('#carouselExampleControls')
-        const carousel = new bootstrap.Carousel(myCarouselElement, {
-            interval: 3000,
-            wrap: true
         })
     </script>
 </body>

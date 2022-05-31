@@ -162,17 +162,152 @@ html {
 }
 
 .contact{
-    border-radius: 35px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    /*background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)*/
+    width: 60%;
+        background-color: rgba(255, 255, 255, .65);  
+        backdrop-filter: blur(5px);
 }
 
-/* #contactheading{
-    color: #f2f7f8;
-} */
-/* #imgdiv{
-    margin-left: 100px!important;
-} */
+.myForm{
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
 
-/* font-family: 'Ubuntu', sans-serif; */
-/* font-family: 'Montserrat', sans-serif; */
+.contactsec{
+    padding: 1% 0%;
+    background-image: url('https://images.pexels.com/photos/258205/pexels-photo-258205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+}
+
+/* ------Responsive------- */
+@media only screen and (max-width: 959px) {
+    #profile {padding: 25% 0% 12%;}
+    #rohitimg{margin: 0% auto;}
+    #intro{text-align: center;}
+    #intropara{text-align: justify;}
+    .button{margin: 15% auto 0;}
+    #line1{margin-bottom: 15%;}
+    #line2{width: 32%;}
+    #skillbox{margin-bottom: 0%;}
+    .contact{width: 90%;}
+    .container2{margin: 0% 0% 3% 3%;
+        padding: 0% 1% 0% 2%!important;
+    display: flex !important;
+    }
+    .icons{margin: 8% 0% !important;}
+    #insta{width: 25%;}
+    #instagram{width: 50%;}
+    .contactsec{
+        background-image: url('https://images.unsplash.com/photo-1561602535-944b7d60ec08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    #project{
+        padding: 5% 0% 20% 0%;
+    }
+
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    #profile {padding: 25% 0% 12%;}
+    #rohitimg{margin: 0% auto;}
+    #intro{text-align: center;}
+    #intropara{text-align: justify;}
+    .button{margin: 15% auto 0;}
+    #line2{width: 32%;}
+    .contact{width: 90%;}
+    .container2{margin: 0% 0% 3% 3%;}
+    #insta{width: 25%;}
+    #instagram{width: 50%;}
+    #project{
+        padding: 5% 0% 20% 0%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    #profile {padding: 20% 0% 12%;}
+    #rohitimg{margin: 0% auto;}
+    #intro{text-align: center;}
+    #intropara{text-align: justify;}
+    .button{margin: 15% auto 0;}
+    #line2{width: 32%;}
+    .contact{width: 90%;}
+    .container2{margin: 0% 0% 3% 3%;}
+    #insta{width: 25%;}
+    #instagram{width: 50%;}
+    #project{
+        padding: 5% 0% 20% 0%;
+    }
+}
+/* ------Responsive------- */
+
+/* -------form CSS------ */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #1376ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #433ee2;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 0% 30% 5%;
+  }
+  
+  .container2 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 12% 30% 12%;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  /* -------form CSS------ */
